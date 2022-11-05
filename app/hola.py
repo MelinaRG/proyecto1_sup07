@@ -24,8 +24,6 @@ b=df2.reset_index().to_dict(orient="index")
 c=df3.reset_index().to_dict(orient="index")
 
 
-@app.get("/")
-
 @app.get("/2019")
 async def index():
     return a
