@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-f = "./app/netflix.csv"
+f = "netflix.csv"
 df= pd.read_csv(f)
 
 df["date_added"] = pd.to_datetime(df["date_added"])
