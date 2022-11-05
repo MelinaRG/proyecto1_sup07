@@ -24,6 +24,10 @@ b=df2.reset_index().to_dict(orient="index")
 c=df3.reset_index().to_dict(orient="index")
 
 
+@app.get("/")
+async def index():
+    return "no te olvides de ponerte crema, sino te salen arrugas"
+
 
 @app.get("/2019")
 async def index():
