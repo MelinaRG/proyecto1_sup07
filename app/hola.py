@@ -27,7 +27,7 @@ c=df3.reset_index().to_dict(orient="index")
 
 @app.get("/2019")
 async def index():
-    return a
+    return {"hola":"24234"}
 
 @app.get("/2020")
 async def index():
