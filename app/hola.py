@@ -1,6 +1,8 @@
 import pandas as pd
 from fastapi import FastAPI 
 
+app = FastAPI()
+
 f = "./csv/netflix.csv"
 df= pd.read_csv(f)
 
@@ -21,7 +23,7 @@ a= df1.reset_index().to_dict(orient="index")
 b=df2.reset_index().to_dict(orient="index")
 c=df3.reset_index().to_dict(orient="index")
 
-app = FastAPI()
+
 
 @app.get("/2019")
 async def index():
