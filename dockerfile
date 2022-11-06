@@ -7,5 +7,5 @@ EXPOSE 80
 COPY ./app /app
 
 
-RUN pip install pandas
+RUN pip3 install pandas
 
